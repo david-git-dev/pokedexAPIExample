@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Details</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="test.css">
+</head>
+    <body class="bg-gray-100 p-8 bg-green-400">
+        <div class="flex items-center justify-center pb-4">
+            <h1 class="text-3xl font-bold text-green-600">Pokedex App</h1>
+        </div>
+        <div class="flex items-center bg-white rounded-md mb-8">
+            <input type="search" id="search-input" placeholder="Search for Pokémon Name or ID..." class="w-full pl-4 py-2 text-gray-700 rounded-l-md focus:outline-none focus:ring-2 focus:ring-red-600">
+            <button id="search-button" class="px-4 py-2 text-white bg-red-600 border-red-600 border-2 rounded-r-md hover:bg-red-700 hover:border-red-700 focus:outline-none focus:ring-2 focus:ring-red-600">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+              </svg>
+            </button>
+          </div>
+        <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-md p-6">
+            <h1 class="text-3xl font-bold mb-6" id="pokemon-id">#Number</h1>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="space-y-4">
+                    <div class="swiper-container rounded-lg overflow-hidden">
+                        <div class="swiper-wrapper">
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    
+                    <div>
+                        <h2 class="text-2xl font-semibold" id="pokemon-name">Name of pokemon</h2>
+                        <p class="text-gray-600" id="weight">Weight: ? kg</p>
+                        <p class="text-gray-600" id="height">Height: ? m</p>
+                    </div>
+                </div>
+                
+                <div class="space-y-6">
+                    <h3 class="text-xl font-semibold">Details</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-gray-200 p-3 rounded" id="hp">HP: ?</div>
+                        <div class="bg-gray-200 p-3 rounded" id="attack">Attack: ?</div>
+                        <div class="bg-gray-200 p-3 rounded" id="special-attack">Special Attack:  ?</div>
+                        <div class="bg-gray-200 p-3 rounded" id="defense">Defense: ?</div>
+                        <div class="bg-gray-200 p-3 rounded" id="special-defense">Special Defense:  ?</div>
+                        <div class="bg-gray-200 p-3 rounded" id="speed">Speed:  ?</div>
+                    </div>
+                    
+                    <div class="flex space-x-4" id="types">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="./test.js"></script>
+</html>
